@@ -10,10 +10,7 @@ class app extends console
 {
 	public function command ( string $signature, closure $command )
 	{
-		$command = new closureCommand ( 'greet {name}', function ( string $name )
-		{
-			$this->info ( 'Hello, ' . $name );
-		} );
+		$command = new closureCommand ( $signature, $command );
 
 		$this->add ( $command );
 	}
