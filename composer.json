@@ -1,0 +1,49 @@
+{
+    "name": "firestark/console",
+    "version": "0.0.1",
+    "description": ".",
+    "type": "library",
+    "keywords": [
+        "eyedouble",
+        "firestark",
+        "lionar",
+        "console",
+        "framework"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aron Wouters",
+            "email": "firestark@mail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+    	"illuminate/console": "*",
+        "illuminate/container": "*",
+        "illuminate/events": "*"
+    },
+    "require-dev": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+        	"console\\": "source"
+        },
+        "files": [
+            
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            
+        },
+        "classmap": [
+        	
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
+}

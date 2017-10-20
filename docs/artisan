@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use Illuminate\Container\Container as app;
+use Illuminate\Events\Dispatcher as dispatcher;
+
+
+require __DIR__ . '/vendor/autoload.php';
+
+
+$console = new console\app ( new app, new dispatcher, 1 );
+
+$console->command ( 'greet {name}', function ( string $name )
+{
+	$this->error ( 'Hello, ' . $name );
+} );
+
+
+$console->run ( );
